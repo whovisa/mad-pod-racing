@@ -1,16 +1,12 @@
 import sys
 import math
 
-# Auto-generated code below aims at helping you parse
-# the standard input according to the problem statement.
-# 1 steps in the future aprox
 def move_1step_ahead(wf:float,wp:float, present_goal, future_goal)->tuple:
     step_x = round(wf*future_goal[0] + wp*present_goal[0])
     step_y = round(wf*future_goal[1] + wp*present_goal[1])
     return step_x, step_y
 checkpoints = []
 
-# game loop
 while True:
     # next_checkpoint_x: x position of the next check point
     # next_checkpoint_y: y position of the next check point
